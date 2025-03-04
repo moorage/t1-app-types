@@ -1,0 +1,26 @@
+{
+  "name": "doppler-secrets-manager",
+  "version": "1.0.0",
+  "description": "A user-friendly CLI tool to add secrets to Doppler",
+  "main": "add-secrets-to-doppler.js",
+  "bin": {
+    "add-secrets-to-doppler": "./add-secrets-to-doppler.js"
+  },
+  "scripts": {
+    "start": "node add-secrets-to-doppler.js"
+  },
+  "dependencies": {
+    "commander": "^9.4.1",
+    "node-fetch": "^2.6.7",
+    "chalk": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "doppler",
+    "secrets",
+    "cli"
+  ],
+  "license": "MIT"
+}
