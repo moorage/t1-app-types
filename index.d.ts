@@ -54,9 +54,9 @@ export type AppConfig = {
     useRedirectAndCallback: boolean;
     /**
      * Where to redirect the user to authorize the app, with possible cookie storage values
-     * to pass to the callback function
+     * to pass to the callback function. Default scopes are used if null.
      */
-    getAuthorizeRedirect: (getSecrets: RequestAppSecretsFunction) => Promise<AuthorizeRedirect>;
+    getAuthorizeRedirect: (getSecrets: RequestAppSecretsFunction, scopes: string[] | null) => Promise<AuthorizeRedirect>;
     /**
      * Handle an authorization callback with cookie values from `getAuthorizeRedirect`
      */
