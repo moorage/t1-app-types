@@ -44,7 +44,7 @@ export type AppConfig = {
     iconSVG: string | null;
     /** If no svg is provided, the url of an icon */
     iconURL: string | null;
-    /** Unique identifier for the app, e.g. "com.github.organization.app" -- only one can exist in tier1 environment */
+    /** Unique identifier for the app, e.g. "COM_GITHUB_ORG_APP" -- only one can exist in tier1 environment */
     tier1UniqueId: string;
     /** The provider of the app, e.g. "github" */
     provider: string;
