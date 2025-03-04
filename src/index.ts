@@ -24,6 +24,8 @@ export type AuthorizeRedirect = {
 export type AuthorizationResult = {
   providerAccountId: string;
   accessToken: string;
+  /** Email of the user, if available.  Used for deduplication */
+  email: string | null;
   type: "oauth" | "oidc" | string;
   tokenType: "bearer" | "apitoken" | string;
   refreshToken: string | null;
