@@ -73,4 +73,4 @@ Then you can run it with:
 
 ```bash
 add-secrets-to-doppler --api-key YOUR_API_KEY --project YOUR_PROJECT --config YOUR_CONFIG --secret KEY1=VALUE1
-``` 
+```
