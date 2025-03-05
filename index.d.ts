@@ -66,6 +66,6 @@ export type AppConfig = {
     /**
      * Handle an authorization callback with cookie values from `getAuthorizeRedirect`
      */
-    handleAuthorizationCallback: (requestUrl: string, sessionStorageValues: Record<string, string | null> | null, getSecrets: RequestAppSecretsFunction) => Promise<AuthorizationResult>;
+    handleAuthorizationCallback: (requestUrl: string, originalRedirectUri: string, sessionStorageValues: Record<string, string | null> | null, getSecrets: RequestAppSecretsFunction) => Promise<AuthorizationResult>;
 };
 //# sourceMappingURL=index.d.ts.map
