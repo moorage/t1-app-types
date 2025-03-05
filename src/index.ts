@@ -40,7 +40,7 @@ export type AuthorizationResult = {
 };
 
 /**
- * A configuration for an app, returned by the app provider as its default export
+ * A configuration for an app, which needs to be usable on the client side and server side
  */
 export type AppConfig = {
   /** The version of the app. 1 for first published release. Incremented for each version that needs to be reinstalled. */
@@ -59,6 +59,14 @@ export type AppConfig = {
   provider: string;
   /** The default scopes for the app */
   defaultScopes: string[];
+};
+
+/**
+ * A configuration for an app's authorization process, which is usable on the server side
+ */
+export type AppAuthConfig = {
+  /** The app config */
+  appConfig: AppConfig;
   /** Whether to use a redirect to authorize the app.  Could be false if an API key style app */
   useRedirectAndCallback: boolean;
   /**
