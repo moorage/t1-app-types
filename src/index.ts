@@ -76,6 +76,7 @@ export type AppConfig = {
    */
   handleAuthorizationCallback: (
     requestUrl: string,
+    originalRedirectUri: string,
     sessionStorageValues: Record<string, string | null> | null,
     getSecrets: RequestAppSecretsFunction
   ) => Promise<AuthorizationResult>;
