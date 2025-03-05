@@ -32,8 +32,9 @@
     "build": "tsc",
     "dev": "tsc -w"
   },
-  "dependencies": {},
-  "peerDependencies": {},
+  "dependencies": {
+    "oauth4webapi": "^3.3.0"
+  },
   "devDependencies": {
     "@types/node": "^22.13.9",
     "typescript": "^5.8.2"

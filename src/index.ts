@@ -89,3 +89,5 @@ export type AppAuthConfig = {
     getSecrets: RequestAppSecretsFunction
   ) => Promise<AuthorizationResult>;
 };
+
+export { custom_processAuthorizationCodeOAuth2Response } from "./custom-oauth4webapi.js";
