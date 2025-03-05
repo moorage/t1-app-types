@@ -66,6 +66,7 @@ export type AppConfig = {
    * to pass to the callback function. Default scopes are used if null.
    */
   getAuthorizeRedirect: (
+    redirectUri: string,
     getSecrets: RequestAppSecretsFunction,
     scopes: string[] | null
   ) => Promise<AuthorizeRedirect>;
