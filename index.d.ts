@@ -40,6 +40,10 @@ export type AuthorizationResult = {
  * A configuration for an app, returned by the app provider as its default export
  */
 export type AppConfig = {
+    /** The version of the app. 1 for first published release. Incremented for each version that needs to be reinstalled. */
+    majorVersion: number;
+    /** The minor version of the app. 0 for first published release of the minor version. */
+    minorVersion: number;
     /** The display name of the app, e.g. "GitHub" used on the UI */
     displayName: string;
     /** The icon of the app, in svg format */
