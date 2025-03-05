@@ -75,4 +75,5 @@ export type AppAuthConfig = {
      */
     handleAuthorizationCallback: (requestUrl: string, originalRedirectUri: string, sessionStorageValues: Record<string, string | null> | null, getSecrets: RequestAppSecretsFunction) => Promise<AuthorizationResult>;
 };
+export { custom_processAuthorizationCodeOAuth2Response } from "./custom-oauth4webapi.js";
 //# sourceMappingURL=index.d.ts.map

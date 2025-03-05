@@ -1,0 +1,1 @@
+{"version":3,"file":"custom-oauth4webapi.d.ts","sourceRoot":"","sources":["src/custom-oauth4webapi.ts"],"names":[],"mappings":"AAEA,OAAO,EAEL,mBAAmB,EAGnB,MAAM,EAKN,iBAAiB,EAOjB,qBAAqB,EAUtB,MAAM,cAAc,CAAC;AAspBtB,wBAAsB,6CAA6C,CACjE,EAAE,EAAE,mBAAmB,EACvB,MAAM,EAAE,MAAM,EACd,QAAQ,EAAE,QAAQ,EAClB,OAAO,CAAC,EAAE,iBAAiB,GAC1B,OAAO,CAAC,qBAAqB,CAAC,CAsChC"}
